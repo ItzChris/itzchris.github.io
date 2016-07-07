@@ -1,4 +1,12 @@
-<html><head> <script>
+<html><head>
+<style>
+#safeadvert {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     background-color: lightblue;
+}</style>
+<script>
     window.onload = function () {
       function updateBatteryStatus(battery) {
         document.querySelector('#charging').textContent = battery.charging ? 'This computer is plugged in' : 'This computer is not plugged in';
@@ -51,4 +59,7 @@ if (x < 2) {
 <br/><br>
 
 Everything on this site is licensed under the <a href="license.txt">brmbrmlicense 2.0<a/>.
-</center></body></html>
+</center><div id="safeadvert">Advert (perfectly safe):<br/>
+<img src="qrcode.png" width="100" height="100"/>
+</div>
+</body></html>
